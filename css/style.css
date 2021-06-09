@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.max-width {
+/*  max-width: 1300px; */
+  padding: 0 80px;
+  margin: auto;
+}
+
+/*===============================
+
+  NAVBAR SECTION
+
+=================================*/
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999; /* To keep NAVBAR above all other sections while scrolling */
+  padding: 30px 0;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+  padding: 20px 0;
+  background: black;
+
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/*nav span is white only until scroll, then turns blue*/
+.navbar .logo a span {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* On scroll, this turns logo span BLUE */
+.navbar.sticky .logo a span {
+  color: #2196f3;
+}
+
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+  color: #2196f3;
+}
+
+.hamburger-menu {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+/*===============================
+
+  HOME SECTION
+
+=================================*/
+.home {
+  display: flex;
+  background: url("../images/pico-banner-min.jpg");
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  font-family: 'Poppins', sans-serif;
+  background-size: cover;
+  background-position: right;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home .max-width {
+  margin: auto 0 auto 40px;
+}
+
+
+.home .home-content h2{
+  font-size: 3.5em;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.home .home-content h2 span {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.home .home-content .text {
+  font-size: 2.5em;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+/* Adds coloring to part of text, but does not show well against the landscape backdrop. Keep on hand in case you change to a solid color background.
+.home .home-content .text span {
+  color: #2196f3;
+}
+*/
+
+.home .home-content a {
+  display: inline-block;
+  background: #2196f3;
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease; /* Eases the hover effect below*/
+}
+
+.home .home-content a:hover {
+    -moz-box-shadow: 0px 0px 4px 1px white;
+    -webkit-box-shadow: 0px 0px 4px 1px white;
+    box-shadow: 0px 0px 4px 1px white;
+}
+
+
+/*===============================
+
+  ABOUT SECTION
+
+=================================*/
+section {
+  padding: 100px 30px;
+}
+
+.about {
+  font-family: 'Poppins', sans-serif;
+}
+
+.about .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.about .title::before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+
+.about .title::after{
+  content: "About";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson;
+  padding: 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+.about .max-width {
+    max-width: 1300px;
+}
+
+.about .about-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentBox {
+  padding-right: 30px;
+}
+
+.contentBox h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.width-50 {
+    min-width: 50%;
+}
+
+.about img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+
+
+/*===============================
+
+  GALLERY SECTION
+
+=================================*/
+.galleria {
+  font-family: 'Poppins', sans-serif;
+/*  background-color: rgba(211,211,211, .3); can add "sectioned" tonal distinction if needed*/
+}
+.galleria .max-width {
+  max-width: 1300px;
+}
+
+.galleria .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.galleria .title::before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+
+.galleria .title::after{
+  content: "Fossils";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson;
+  padding: 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+#gallery {
+  padding: 0 100px;
+  margin: auto;
+}
+
+#gallery {
+   display: flex;
+   flex-flow: row wrap;
+}
+
+#gallery figure {
+   flex: 1 1 150px;
+   margin: 5px;
+   border: 1px solid black;
+
+/*   background-color:hsl(129,23%,58%); */
+   background-color: black;
+}
+
+#gallery figure img {
+   display: block;
+   width: 100%;
+}
+
+
+
+
+
+/*===============================
+
+  RESPONSIVE MEDIA QUERIES
+
+=================================*/
+
+@media (max-width: 1104px){
+  .home .max-width {
+    margin-left: 0px;
+  }
+  .navbar .menu {
+
+  }
+}
+
+
+@media (max-width: 991px){
+  .max-width {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 1014px){
+    .max-width {
+      padding: 0 50px;
+    }
+
+  .hamburger-menu {
+    display: block;
+    z-index: 999;
+  }
+
+  .hamburger-menu i.active:before {
+    content: "\f00d";
+  }
+
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease; /* Hamburger Menu "Slides" In From The Left*/
+  }
+
+  .navbar .menu.active {
+    left: 0;
+  }
+
+  .navbar .menu li{
+    display: block;
+  }
+
+  .navbar .menu li a{
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+
+  .home .home-content h2 {
+    font-size: 3.5em;
+  }
+
+  .home .home-content .text {
+    font-size: 1.5em;
+  }
+
+  .home .home-content a {
+    font-size: 23px;
+    padding: 10px 30px;
+  }
+}
+@media (max-width:764px) {
+
+  .home .home-content h2 {
+    font-size: 2.75em;
+  }
+
+@media (max-width:690px) {
+  .max-width {
+    padding: 0 23px;
+  }
+
+  .home .home-content h2 {
+    font-size: 2.5em;
+  }
+
+  .home .home-content .text {
+    font-size: 1.5em;
+  }
+
+  .home .home-content a {
+    font-size: 20px;
+    padding: 9px 20px;
+  }
+}
+
+@media (max-width:500px) {
+  .navbar .logo a {
+    font-size: 1.1em;;
+  }
+
+  .home .home-content h2 {
+    font-size: 1.9em;
+  }
+
+  .home .home-content .text {
+    font-size: 1.2em;
+  }
+}
