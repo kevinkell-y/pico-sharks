@@ -247,6 +247,9 @@ section {
   max-width: 100%;
   border-radius: 5px;
 }
+.about .about-content a {
+    color: #2196f3;
+}
 
 
 
