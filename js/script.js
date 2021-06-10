@@ -49,3 +49,16 @@ for (let i = 1; i <= 24; i++){
 
 // Add variable to the page
 document.getElementById("gallery").innerHTML = htmlCode;
+
+
+
+/*===================================================
+
+    Let's f*ckin go, JSON.
+
+=====================================================*/
+var sharks;
+
+function preload() {
+    sharks = loadJSON("sharks.json");
+}
