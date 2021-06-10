@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 .max-width {
@@ -369,7 +370,7 @@ section {
     color: #ffffff;
     text-align: left;
     font-weight: bold;
-    
+
 }
 
 .content-table th,
@@ -391,27 +392,63 @@ section {
     border-bottom: 2px solid #2196f3;
 }
 
+
+/*===============================
+
+  FOOTER SECTION
+
+=================================*/
+footer {
+    background: #111;
+    color: white;
+    padding: 20px 23px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+footer span a {
+    color: #2196f3;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+footer #year {
+    font-family: 'Poppins', sans-serif;
+}
+
+
 /*===============================
 
   RESPONSIVE MEDIA QUERIES
 
 =================================*/
 
-@media (max-width: 1104px){
+@media (max-width: 1330px){
   .home .max-width {
     margin-left: 0px;
   }
-  .navbar .menu {
+}
+@media (max-width: 1200px){
+    .about .title {
+      margin-bottom: 30px;
+    }
+    .about .about-content h3 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    section {
+      padding: 80px 30px;
+    }
+    #gallery {
+      padding: 0 25px;
+      margin: auto;
+    }
 
-  }
 }
 
-
-@media (max-width: 991px){
-  .max-width {
-    padding: 0 50px;
-  }
-}
 
 @media (max-width: 1014px){
     .max-width {
@@ -465,12 +502,30 @@ section {
     font-size: 23px;
     padding: 10px 30px;
   }
+
+  section{
+      padding: 60px 0;
+  }
 }
 @media (max-width:764px) {
 
   .home .home-content h2 {
     font-size: 2.75em;
   }
+  .about .about-content {
+    display: block;
+    justify-content: center;
+  }
+
+  .contentBox {
+    padding-right: 0px;
+  }
+
+  .contentBox h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+}
 
 @media (max-width:690px) {
   .max-width {
@@ -489,6 +544,8 @@ section {
     font-size: 20px;
     padding: 9px 20px;
   }
+
+
 }
 
 @media (max-width:500px) {

@@ -54,12 +54,7 @@ document.getElementById("gallery").innerHTML = htmlCode;
 
 /*===================================================
 
-    Let's f*ckin go, JSON.
+    Add YEAR to the Footer
 
 =====================================================*/
-// var sharks;
-//
-// function preload() {
-//     sharks = loadJSON("sharks.json");
-// }
-//
+document.getElementById("year").innerHTML = new Date().getFullYear();
