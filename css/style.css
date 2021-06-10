@@ -346,7 +346,50 @@ section {
   justify-content: space-between;
 }
 
+/*===============================
 
+  STYLING HTML TABLE
+  Wholly influenced & inspired by DCODE
+  Source Code @ https://www.youtube.com/watch?v=biI9OFH6Nmg
+
+=================================*/
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.content-table thead tr {
+    background-color: #2196f3;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Target the even rows in the table*/
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+/* Target the last row in the table */
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #2196f3;
+}
 
 /*===============================
 

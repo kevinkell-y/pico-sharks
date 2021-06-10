@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Fossil Sharks of The Pico Formation</title>
-  <link href="/css/all.css" rel="stylesheet"> <!-- Adding FontAwesome -->
+  <link href="/css/all.css" rel="stylesheet"> <!-- Adds FontAwesome CSS-->
   <link rel="stylesheet" href="/css/style.css">
 
 </head>
@@ -83,13 +83,15 @@
     <section class="research" id="research">
         <div class="max-width">
             <h2 class="title">Shark Taxa from SoCal's Pliocene</h2>
-            <div id="sharkList">
-
+            <div id="sharkList" style="overflow-x:auto;">
+                <!--reference shark-data.js & shark-table.js-->
             </div>
         </div><!-- max-width -->
     </section><!-- end "research" -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/shark-data.js" defer></script>
+    <script src="/js/shark-table.js" defer></script>
     <script src="/js/script.js"></script>
   </body>
 </html>

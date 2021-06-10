@@ -81,5 +81,5 @@ var learnMore =["https://en.wikipedia.org/wiki/Broadnose_sevengill_shark",
                 "https://en.wikipedia.org/wiki/Spiny_dogfish",
                 "https://en.wikipedia.org/wiki/Bat_ray",
                 "https://en.wikipedia.org/wiki/Round_stingray",
-                "https://en.wikipedia.org/wiki/Eagle_ray
+                "https://en.wikipedia.org/wiki/Eagle_ray"
             ];
