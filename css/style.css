@@ -246,6 +246,7 @@ section {
 .about img {
   max-width: 100%;
   border-radius: 5px;
+
 }
 .about .about-content a {
     color: #2196f3;
@@ -572,7 +573,9 @@ footer #year {
     font-size: 20px;
     padding: 9px 20px;
   }
-
+  .about img {
+    padding-top: 1em;
+  }
 
 }
 
@@ -588,4 +591,5 @@ footer #year {
   .home .home-content .text {
     font-size: 1.2em;
   }
+
 }
